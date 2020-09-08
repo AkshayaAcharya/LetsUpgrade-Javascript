@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-Batch2-Day2-Assignment</title>
+    <style>
+        .question {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Day 4 Assignment</h2>
+    <h2>Q1. Create a webpage containing an image and three buttons</h3>
+    <ol>
+        <li>On click of the second button a change the existing image to a new image</li>
+        <li>On click of the third button change it once again</li>
+        <li>On click of first, the first image should come back</li>
+    </ol>
+    <div class="question">
+        <img src='https://unowp.com/wp-content/uploads/2019/05/free-stock-images-traveler.jpg' width='400px'; height='350px'/>    
+        <br>
+        <button onclick="changeImage(this)">1<sup>st</sup></button>
+        <button onclick="changeImage(this)">2<sup>nd</sup></button>
+        <button onclick="changeImage(this)">3<sup>rd</sup></button>
+    </div>
+   <hr>
+   <h2>Q2. Create a webpage containing two input fields and a button.</h3>
+    <ol>
+        <li>Write something in the first input</li>
+        <li>On click of the button, the content of input one should be copied in the second input</li>
+    </ol>
+    <div class="question">
+        <label for='firstInput'>First Input:</label>
+        <input class='copy' type="text" />
+        <label for='secondInput'>Copy First Input here:</label>
+        <input class='copy' type='text'/>
+        <button onclick="copyInput()">Copy Input</button>
+    </div>
+    <hr>
+    <h2>Q3&Q4. Create an array of objects with objects having the following properties</h3>
+    <ol>
+        <li>{name (string), age (number), country (string), hobbies array (string [ ] ) }</li>
+        <li>Write a function to display all the objects on the console</li>
+        <li>Write a function to display all the objects having age less than 30</li>
+        <li>Write a function to display all the objects having country India</li>
+    </ol>
+    <div class="question">
+        <button onclick="displayAll()">Display all Objects on console</button>
+        <button onclick="displayOnAge()">Display Objects: age &lt; 30 on console</button>
+        <button onclick="displayOnCountry()">Display Objects: country = 'India'</button>
+    </div>
+
+
+    
+
+    
+    <script src='./index.js'></script>
+</body>
+</html>
