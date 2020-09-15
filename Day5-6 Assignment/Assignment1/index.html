@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q1</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .data {
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            width: 80%;
+            background-color: rgb(233, 220, 204);
+            margin-left: 10%;
+            margin-top: 50px;
+            padding: 20px;
+        }
+        .table {
+            width: 100%;
+            margin-top: 20px;
+        }
+        th, td {
+            height: 50px;
+            text-align: center;
+        }
+        input {
+            padding: 10px;
+            text-indent: 20px;
+        }
+        button {
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="data" >
+        <h1>Person Details</h1>
+        <input type="text" id="search" placeholder="Search by Name/City" onkeyup="searchByNameCity()">
+        <table border = 1 class="table" cellspacing = 0>
+            <thead>
+                <th>SI No.</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>City</th>
+                <th>Salary</th>
+                <th>Actions</th>
+            </thead>
+            <tbody class="tdata"></tbody>
+        </table>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>

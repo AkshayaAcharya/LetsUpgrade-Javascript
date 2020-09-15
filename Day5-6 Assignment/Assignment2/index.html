@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q2</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        .data {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            width: 80%;
+            margin-left: 10%;
+            margin-top: 50px;
+            padding: 50px;
+            display: inline-block;
+        }
+        .form{
+            padding-top: 20px;
+        }
+        input {
+            padding: 10px;
+            text-indent: 20px;
+        }
+        button {
+            padding: 10px;
+        }
+        .table {
+            width: 100%;
+            margin-top: 20px;
+        }
+        th, td {
+            height: 50px;
+            text-align: center;
+        }
+        #search {
+            margin-top: 20px;
+            width: 250px;
+        }
+    </style>
+</head>
+<body>
+    <div class="data">
+        <h1>Bus Details</h1>
+        <div class="form">
+            <form onsubmit="addBus(event)">
+                <input type="text" required placeholder = "Name" id="name">
+                <input type="text" required  placeholder = "Source" id="source">
+                <input type="text" required placeholder = "Destination" id="destination">
+                <input type="text" required placeholder = "Number" id="number">
+                <input type="text" required placeholder = "Passenger Capacity" id="passengerCapacity">
+                <button type="submit">Add Bus</button>
+            </form>
+        </div>
+        <input type="text" placeholder="Search by Source/Destination" id="search" onkeyup="seachBySourceDestination()">
+        <table class="table" border=1 cellspacing=0>
+            <thead>
+                <th>SI No</th>
+                <th>Name</th>
+                <th>Source</th>
+                <th>Destination</th>
+                <th>Number</th>
+                <th>Passenger Capacity</th>
+            </thead>
+            <tbody class="tdata">
+
+            </tbody>
+        </table>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
